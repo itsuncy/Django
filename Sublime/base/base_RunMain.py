@@ -28,12 +28,12 @@ if __name__ == "__main__":
     # fiddler抓的接口为：https://www.imooc.com/index/getstarlist
     url = "http://www.imooc.com/index/getstarlist"  # 为什么在代码中的url要去掉s，加s就报错
     data = None
-    result = RunMain(url, 'GET', data)
-    print(result.request)
+    result = RunMain(url, 'GET', data).request
+    print(result)
 # data = {
-# 	'username':'admin',
-# 	'password':'123456'
-# 	}
+#   'username':'admin',
+#   'password':'123456'
+#   }
 # url = "http://127.0.0.1:8000/login/"
 # result = RunMain(url,'POST',data)
 # print(result.request)

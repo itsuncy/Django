@@ -1,5 +1,9 @@
-import unittest
+# coding: utf-8
+# @Author: WuKong.Sun
+# @Date:2018.10.20
+# @Describe: setup类，方法和teardown类，方法的使用
 
+import unittest
 
 class TestMethod(unittest.TestCase):
     @classmethod

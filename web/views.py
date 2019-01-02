@@ -8,9 +8,14 @@ def login(request):
     # POST请求
     # http://127.0.0.1:8000/login/
     if request.method == 'POST':
-        result = {}
+        result = {
+
+        }
         username = request.POST.get('username')
-        password = request.POST.get('password')
+        password = request.POST.get('password')        
+        result['isSuccess'] = 'S'
+        result['retCode'] = 200
+        result['retMessage'] = '成功'
         result['username'] = username
         result['password'] = password
         response = json.dumps(result)

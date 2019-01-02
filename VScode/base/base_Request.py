@@ -1,4 +1,7 @@
 # coding: utf-8
+# @Author: WuKong.Sun
+# @Date:2018.10.23
+# @Describe: GET请求与POST请求方法的编写
 
 import requests
 import json
@@ -31,5 +34,5 @@ def run_main(url, data, method):
 
 
 if __name__ == "__main__":
-    # print(run_main(getUrl,getData,'GET'))
+    # print(run_main(getUrl, getData, 'GET'))
     print(run_main(postUrl, postData, 'POST'))
